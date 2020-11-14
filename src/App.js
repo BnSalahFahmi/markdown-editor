@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { sampleText } from  './sampleText';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container-fluid' style={{ marginTop: '5px' }}>
+      <div className='row'>
+        <div className='col-sm-6'>
+          <textarea value = { sampleText } className='form-control' rows='25'></textarea>
+        </div>
+        <div className='col-sm-6'>
+          { sampleText }
+        </div>
+      </div>
     </div>
   );
 }
